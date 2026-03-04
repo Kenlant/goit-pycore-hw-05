@@ -18,5 +18,6 @@ def sum_profit(text: str, func: Callable):
     return sum(func(text))
 
 
-total_income = sum_profit(test_text, generator_numbers)
-print(f"Загальний дохід: {total_income}")
+if (__name__ == "__main__"):
+    total_income = sum_profit(test_text, generator_numbers)
+    print(f"Загальний дохід: {total_income}")
